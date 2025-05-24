@@ -106,9 +106,9 @@ namespace plato_backend.Services
 
             var tokenOptions = new JwtSecurityToken
             (
-                issuer: "https://platobackend-a7hagaahdvdfesgm.westus-01.azurewebsites.net",
+                issuer: "plato-backend-service-ckfsdddugkazhmgz.westus-01.azurewebsites.net",
                 // issuer: "https://localhost:5000",
-                audience: "https://platobackend-a7hagaahdvdfesgm.westus-01.azurewebsites.net",
+                audience: "plato-backend-service-ckfsdddugkazhmgz.westus-01.azurewebsites.net",
                 // audience: "https://localhost:5000",
                 claims: claims,
                 signingCredentials: signingCredentials
@@ -262,7 +262,6 @@ namespace plato_backend.Services
 
             if (userToEdit == null) return false;
             
-            userToEdit.Id = user.Id;
             userToEdit.Email = user.Email;
             userToEdit.Username = user.Username;
             // userToEdit.Salt = user.Salt;

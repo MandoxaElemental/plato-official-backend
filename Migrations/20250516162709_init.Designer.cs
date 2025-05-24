@@ -13,7 +13,7 @@ namespace plato_backend.Migrations
 {
     [DbContext(typeof(DataContext))]
     [Migration("20250516162709_init")]
-    partial class init
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
